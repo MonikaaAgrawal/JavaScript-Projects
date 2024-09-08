@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 30px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #74512D, #AF8F6F);
+    padding: 10px;
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background: #FED8B1;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 30px;
+}
+
+.to-do-app h1{
+    color: #543310;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+
+.to-do-app img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F8F4E1;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #A67B5B;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 15px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-image: url(circle1.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(checkedicon.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #FFFAE6;
+}
